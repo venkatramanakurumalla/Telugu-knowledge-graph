@@ -1,0 +1,285 @@
+{
+  "metadata": {
+    "version": "3.0.0",
+    "language": "Telugu",
+    "script": "Telugu",
+    "languageCode": "te",
+    "title": "KG-Telugu v3: Production-Grade Knowledge Graph for Telugu",
+    "description": "A comprehensive, production-ready knowledge graph for Telugu covering phonology, orthography, morphology, syntax, semantics, pragmatics, morpho-phonemics, derivation, and ISO 15919 transliteration. Includes paradigms, rules, and cross-resource links for NLP tasks (tagging, parsing, generation, TTS/ASR).",
+    "sources": [
+      "Andhra Bharati Vyākaranam",
+      "Telugu Vākya Nirmiti - Dr. Bh. Krishnamurti",
+      "Comparative Dravidian Linguistics - S. N. Sridhar",
+      "ISO 15919:2009 Transliteration Standard",
+      "Wiktionary",
+      "Telugu Academy Resources"
+    ],
+    "license": "CC-BY-NC-SA 4.0",
+    "createdAt": "2023-10-27",
+    "lastUpdated": "2025-08-27",
+    "coverage": [
+      "Phonology",
+      "Orthography",
+      "Morphology",
+      "Syntax",
+      "Semantics",
+      "Pragmatics",
+      "Morpho-phonemics",
+      "Word Formation",
+      "Transliteration"
+    ],
+    "status": "production-ready",
+    "schemaVersion": "KG-Telugu-v3"
+  },
+  "graph": {
+    "namespaces": {
+      "node": "https://kg.te/telugu/nodes/",
+      "edge": "https://kg.te/telugu/edges/",
+      "prop": "https://kg.te/telugu/properties/"
+    },
+    "schema": {
+      "nodeTypes": [
+        "Phoneme", "Grapheme", "PhonologicalRule", "MorphophonemicRule",
+        "Morpheme", "Lexeme", "Paradigm", "SyntacticRule", "Construction",
+        "GrammaticalRelation", "SemanticConcept", "SemanticRole", "PragmaticMarker",
+        "TransliterationMap", "OrthographyRule", "UDMapping", "Template"
+      ],
+      "edgeTypes": [
+        "isA", "partOf", "combinesWith", "appliesTo", "requiresModifier",
+        "takesCase", "conjugatesWith", "assignsRole", "hasForm", "allomorphOf",
+        "usesCaseMarker", "hasExampleComponent", "canRealize", "mapsTo",
+        "derivesFrom", "licenses", "flags", "synonymOf", "antonymOf",
+        "hypernymOf", "hyponymOf"
+      ]
+    },
+
+    "nodes": [
+      {
+        "id": "phonology_inventory",
+        "type": "Paradigm",
+        "subtype": "PhonemeInventory",
+        "name": "Core Telugu Phoneme Set",
+        "features": {"syllableStructures": ["CV", "CVC", "CVV", "CCV"], "prosody": ["declarative_fall", "yesno_rise"]}
+      },
+
+      
+      {"id": "vowel_a", "type": "Phoneme", "subtype": "Vowel", "teluguSymbol": "అ", "romanization": "a", "ipa": "/a/", "name": "అకారం", "properties": {"height": "low", "backness": "central", "rounding": "unrounded", "length": "short", "position": "primary", "stressable": true}},
+      {"id": "vowel_aa", "type": "Phoneme", "subtype": "Vowel", "teluguSymbol": "ఆ", "romanization": "ā", "ipa": "/aː/", "name": "ఆకారం", "properties": {"height": "low", "backness": "central", "rounding": "unrounded", "length": "long", "position": "primary"}},
+      {"id": "vowel_i", "type": "Phoneme", "subtype": "Vowel", "teluguSymbol": "ఇ", "romanization": "i", "ipa": "/ɪ/", "name": "ఇకారం", "properties": {"height": "near-high", "backness": "front", "rounding": "unrounded", "length": "short"}},
+      {"id": "vowel_ii", "type": "Phoneme", "subtype": "Vowel", "teluguSymbol": "ఈ", "romanization": "ī", "ipa": "/iː/", "name": "ఈకారం", "properties": {"height": "high", "backness": "front", "rounding": "unrounded", "length": "long"}},
+      {"id": "vowel_u", "type": "Phoneme", "subtype": "Vowel", "teluguSymbol": "ఉ", "romanization": "u", "ipa": "/u/", "name": "ఉకారం", "properties": {"height": "high", "backness": "back", "rounding": "rounded", "length": "short"}},
+      {"id": "vowel_uu", "type": "Phoneme", "subtype": "Vowel", "teluguSymbol": "ఊ", "romanization": "ū", "ipa": "/uː/", "name": "ఊకారం", "properties": {"height": "high", "backness": "back", "rounding": "rounded", "length": "long"}},
+      {"id": "vowel_e", "type": "Phoneme", "subtype": "Vowel", "teluguSymbol": "ఎ", "romanization": "e", "ipa": "/e/", "name": "ఎకారం", "properties": {"height": "mid", "backness": "front", "rounding": "unrounded", "length": "short"}},
+      {"id": "vowel_ee", "type": "Phoneme", "subtype": "Vowel", "teluguSymbol": "ఏ", "romanization": "ē", "ipa": "/eː/", "name": "ఏకారం", "properties": {"height": "close-mid", "backness": "front", "rounding": "unrounded", "length": "long"}},
+      {"id": "vowel_o", "type": "Phoneme", "subtype": "Vowel", "teluguSymbol": "ఒ", "romanization": "o", "ipa": "/o/", "name": "ఒకారం", "properties": {"height": "mid", "backness": "back", "rounding": "rounded", "length": "short"}},
+      {"id": "vowel_oo", "type": "Phoneme", "subtype": "Vowel", "teluguSymbol": "ఓ", "romanization": "ō", "ipa": "/oː/", "name": "ఓకారం", "properties": {"height": "close-mid", "backness": "back", "rounding": "rounded", "length": "long"}},
+      {"id": "vowel_au", "type": "Phoneme", "subtype": "Vowel", "teluguSymbol": "ఔ", "romanization": "au", "ipa": "/au̯/", "name": "ఔకారం", "properties": {"height": "diphthong", "backness": "front-to-back", "rounding": "rounded", "length": "long"}},
+      {"id": "vowel_rr", "type": "Phoneme", "subtype": "Vowel", "teluguSymbol": "ఋ", "romanization": "r̥", "ipa": "/r̩/", "name": "ఋకారం", "properties": {"height": "syllabic", "backness": "central", "rounding": "unrounded", "length": "short", "status": "Sanskritic"}},
+      {"id": "vowel_rr_long", "type": "Phoneme", "subtype": "Vowel", "teluguSymbol": "ౠ", "romanization": "r̥̄", "ipa": "/r̩ː/", "name": "ౠ (long ఋ)", "properties": {"status": "rare"}},
+      {"id": "vowel_ll", "type": "Phoneme", "subtype": "Vowel", "teluguSymbol": "ఌ", "romanization": "l̥", "ipa": "/l̩/", "name": "ఌకారం", "properties": {"status": "rare"}},
+      {"id": "vowel_ll_long", "type": "Phoneme", "subtype": "Vowel", "teluguSymbol": "ౡ", "romanization": "l̥̄", "ipa": "/l̩ː/", "name": "ౡ (long ఌ)", "properties": {"status": "rare"}},
+
+      {"id": "anusvara", "type": "Grapheme", "subtype": "Diacritic", "teluguSymbol": "ం", "romanization": "ṃ", "ipa": "[̃/m̽]", "description": "Nasalization or homorganic nasal."},
+      {"id": "visarga", "type": "Grapheme", "subtype": "Diacritic", "teluguSymbol": "ః", "romanization": "ḥ", "ipa": "[h]", "description": "Post-vocalic breath."},
+      {"id": "virama", "type": "Grapheme", "subtype": "Virama", "teluguSymbol": "్", "romanization": "∅", "description": "Suppresses inherent vowel /a/."},
+
+      {"id": "consonant_ka", "type": "Phoneme", "subtype": "Consonant", "teluguSymbol": "క", "romanization": "ka", "ipa": "[k]", "properties": {"varga": "velar", "voicing": "unvoiced", "aspiration": "unaspirated", "manner": "plosive", "place": "velar"}},
+      {"id": "consonant_kha", "type": "Phoneme", "subtype": "Consonant", "teluguSymbol": "ఖ", "romanization": "kha", "ipa": "[kʰ]", "properties": {"varga": "velar", "voicing": "unvoiced", "aspiration": "aspirated", "manner": "plosive", "place": "velar"}},
+      {"id": "consonant_ga", "type": "Phoneme", "subtype": "Consonant", "teluguSymbol": "గ", "romanization": "ga", "ipa": "[ɡ]", "properties": {"varga": "velar", "voicing": "voiced", "aspiration": "unaspirated", "manner": "plosive", "place": "velar"}},
+      {"id": "consonant_gha", "type": "Phoneme", "subtype": "Consonant", "teluguSymbol": "ఘ", "romanization": "gha", "ipa": "[ɡʱ]", "properties": {"varga": "velar", "voicing": "voiced", "aspiration": "breathy", "manner": "plosive"}},
+      {"id": "consonant_nga", "type": "Phoneme", "subtype": "Consonant", "teluguSymbol": "ఙ", "romanization": "ṅa", "ipa": "[ŋ]", "properties": {"varga": "velar", "manner": "nasal", "voicing": "voiced"}},
+
+      {"id": "consonant_ca", "type": "Phoneme", "subtype": "Consonant", "teluguSymbol": "చ", "romanization": "ca", "ipa": "[t͡ɕ]", "properties": {"varga": "palatal", "manner": "affricate"}},
+      {"id": "consonant_cha", "type": "Phoneme", "subtype": "Consonant", "teluguSymbol": "ఛ", "romanization": "cha", "ipa": "[t͡ɕʰ]", "properties": {"varga": "palatal", "manner": "affricate", "aspiration": "aspirated"}},
+      {"id": "consonant_ja", "type": "Phoneme", "subtype": "Consonant", "teluguSymbol": "జ", "romanization": "ja", "ipa": "[d͡ʑ/ɟʝ]", "properties": {"varga": "palatal", "manner": "affricate"}},
+      {"id": "consonant_jha", "type": "Phoneme", "subtype": "Consonant", "teluguSymbol": "ఝ", "romanization": "jha", "ipa": "[d͡ʑʱ]", "properties": {"varga": "palatal", "manner": "affricate", "aspiration": "breathy"}},
+      {"id": "consonant_ña", "type": "Phoneme", "subtype": "Consonant", "teluguSymbol": "ఞ", "romanization": "ña", "ipa": "[ɲ]", "properties": {"varga": "palatal", "manner": "nasal"}},
+
+      {"id": "consonant_ta_retro", "type": "Phoneme", "subtype": "Consonant", "teluguSymbol": "ట", "romanization": "ṭa", "ipa": "[ʈ]", "properties": {"varga": "retroflex", "manner": "plosive"}},
+      {"id": "consonant_tha_retro", "type": "Phoneme", "subtype": "Consonant", "teluguSymbol": "ఠ", "romanization": "ṭha", "ipa": "[ʈʰ]", "properties": {"varga": "retroflex", "manner": "plosive"}},
+      {"id": "consonant_da_retro", "type": "Phoneme", "subtype": "Consonant", "teluguSymbol": "డ", "romanization": "ḍa", "ipa": "[ɖ]", "properties": {"varga": "retroflex", "manner": "plosive"}},
+      {"id": "consonant_dha_retro", "type": "Phoneme", "subtype": "Consonant", "teluguSymbol": "ఢ", "romanization": "ḍha", "ipa": "[ɖʱ]", "properties": {"varga": "retroflex", "manner": "plosive", "aspiration": "breathy"}},
+      {"id": "consonant_na_retro", "type": "Phoneme", "subtype": "Consonant", "teluguSymbol": "ణ", "romanization": "ṇa", "ipa": "[ɳ]", "properties": {"varga": "retroflex", "manner": "nasal"}},
+
+      {"id": "consonant_ta_dental", "type": "Phoneme", "subtype": "Consonant", "teluguSymbol": "త", "romanization": "ta", "ipa": "[t̪]", "properties": {"varga": "dental", "manner": "plosive"}},
+      {"id": "consonant_tha_dental", "type": "Phoneme", "subtype": "Consonant", "teluguSymbol": "థ", "romanization": "tha", "ipa": "[t̪ʰ]", "properties": {"varga": "dental", "manner": "plosive"}},
+      {"id": "consonant_da_dental", "type": "Phoneme", "subtype": "Consonant", "teluguSymbol": "ద", "romanization": "da", "ipa": "[d̪]", "properties": {"varga": "dental", "manner": "plosive"}},
+      {"id": "consonant_dha_dental", "type": "Phoneme", "subtype": "Consonant", "teluguSymbol": "ధ", "romanization": "dha", "ipa": "[d̪ʱ]", "properties": {"varga": "dental", "manner": "plosive", "aspiration": "breathy"}},
+      {"id": "consonant_na_dental", "type": "Phoneme", "subtype": "Consonant", "teluguSymbol": "న", "romanization": "na", "ipa": "[n̪]", "properties": {"varga": "dental", "manner": "nasal"}},
+
+      {"id": "consonant_pa", "type": "Phoneme", "subtype": "Consonant", "teluguSymbol": "ప", "romanization": "pa", "ipa": "[p]", "properties": {"varga": "labial", "manner": "plosive"}},
+      {"id": "consonant_pha", "type": "Phoneme", "subtype": "Consonant", "teluguSymbol": "ఫ", "romanization": "pha", "ipa": "[pʰ/f]", "properties": {"varga": "labial", "manner": "plosive/spirant"}},
+      {"id": "consonant_ba", "type": "Phoneme", "subtype": "Consonant", "teluguSymbol": "బ", "romanization": "ba", "ipa": "[b]", "properties": {"varga": "labial", "manner": "plosive"}},
+      {"id": "consonant_bha", "type": "Phoneme", "subtype": "Consonant", "teluguSymbol": "భ", "romanization": "bha", "ipa": "[bʱ]", "properties": {"varga": "labial", "manner": "plosive", "aspiration": "breathy"}},
+      {"id": "consonant_ma", "type": "Phoneme", "subtype": "Consonant", "teluguSymbol": "మ", "romanization": "ma", "ipa": "[m]", "properties": {"varga": "labial", "manner": "nasal"}},
+
+      {"id": "consonant_ya", "type": "Phoneme", "subtype": "Consonant", "teluguSymbol": "య", "romanization": "ya", "ipa": "[j]", "properties": {"manner": "approximant"}},
+      {"id": "consonant_ra", "type": "Phoneme", "subtype": "Consonant", "teluguSymbol": "ర", "romanization": "ra", "ipa": "[ɾ]", "properties": {"manner": "tap"}},
+      {"id": "consonant_la", "type": "Phoneme", "subtype": "Consonant", "teluguSymbol": "ల", "romanization": "la", "ipa": "[l]", "properties": {"manner": "lateral"}},
+      {"id": "consonant_va", "type": "Phoneme", "subtype": "Consonant", "teluguSymbol": "వ", "romanization": "va", "ipa": "[ʋ]", "properties": {"manner": "approximant"}},
+      {"id": "consonant_sha", "type": "Phoneme", "subtype": "Consonant", "teluguSymbol": "శ", "romanization": "śa", "ipa": "[ɕ]", "properties": {"manner": "fricative"}},
+      {"id": "consonant_ssa", "type": "Phoneme", "subtype": "Consonant", "teluguSymbol": "ష", "romanization": "ṣa", "ipa": "[ʂ]", "properties": {"manner": "fricative"}},
+      {"id": "consonant_sa", "type": "Phoneme", "subtype": "Consonant", "teluguSymbol": "స", "romanization": "sa", "ipa": "[s]", "properties": {"manner": "fricative"}},
+      {"id": "consonant_ha", "type": "Phoneme", "subtype": "Consonant", "teluguSymbol": "హ", "romanization": "ha", "ipa": "[ɦ/h]", "properties": {"manner": "fricative"}},
+      {"id": "consonant_rra", "type": "Phoneme", "subtype": "Consonant", "teluguSymbol": "ఱ", "romanization": "ṟa", "ipa": "[r]", "properties": {"manner": "trill", "status": "literary"}},
+      {"id": "consonant_lla", "type": "Phoneme", "subtype": "Consonant", "teluguSymbol": "ళ", "romanization": "ḷa", "ipa": "[ɭ]", "properties": {"manner": "retroflex lateral"}},
+
+      {"id": "matra_aa", "type": "Grapheme", "subtype": "VowelModifier", "teluguSymbol": "ా", "romanization": "ā", "appliesTo": "Consonant"},
+      {"id": "matra_i", "type": "Grapheme", "subtype": "VowelModifier", "teluguSymbol": "ి", "romanization": "i", "appliesTo": "Consonant"},
+      {"id": "matra_ii", "type": "Grapheme", "subtype": "VowelModifier", "teluguSymbol": "ీ", "romanization": "ī", "appliesTo": "Consonant"},
+      {"id": "matra_u", "type": "Grapheme", "subtype": "VowelModifier", "teluguSymbol": "ు", "romanization": "u", "appliesTo": "Consonant"},
+      {"id": "matra_uu", "type": "Grapheme", "subtype": "VowelModifier", "teluguSymbol": "ూ", "romanization": "ū", "appliesTo": "Consonant"},
+      {"id": "matra_e", "type": "Grapheme", "subtype": "VowelModifier", "teluguSymbol": "ె", "romanization": "e", "appliesTo": "Consonant"},
+      {"id": "matra_ee", "type": "Grapheme", "subtype": "VowelModifier", "teluguSymbol": "ే", "romanization": "ē", "appliesTo": "Consonant"},
+      {"id": "matra_o", "type": "Grapheme", "subtype": "VowelModifier", "teluguSymbol": "ొ", "romanization": "o", "appliesTo": "Consonant"},
+      {"id": "matra_oo", "type": "Grapheme", "subtype": "VowelModifier", "teluguSymbol": "ో", "romanization": "ō", "appliesTo": "Consonant"},
+      {"id": "matra_au", "type": "Grapheme", "subtype": "VowelModifier", "teluguSymbol": "ౌ", "romanization": "au", "appliesTo": "Consonant"},
+      {"id": "matra_rr", "type": "Grapheme", "subtype": "VowelModifier", "teluguSymbol": "ృ", "romanization": "r̥", "appliesTo": "Consonant"},
+
+      {"id": "rule_gunintam_k_i", "type": "PhonologicalRule", "name": "క + ి → కి", "ruleType": "Gunintam", "pattern": "C + V → CV", "condition": "Vowel modifier applied", "example": "క + ి = కి", "romanizedExample": "ka + i = ki"},
+      {"id": "rule_anusvara_assimilation", "type": "PhonologicalRule", "name": "Anusvara place assimilation", "pattern": "ṃ → N_place / _ C_place", "description": "Anusvara becomes homorganic nasal before consonants (e.g.,ంప = mp)."},
+      {"id": "rule_retroflexion", "type": "PhonologicalRule", "name": "n → ṇ / _ {ṭ, ḍ, ṇ}", "description": "Dental n becomes retroflex before retroflexes across morpheme boundary."},
+
+      {"id": "orth_rule_virama", "type": "OrthographyRule", "name": "Virama suppresses inherent vowel", "pattern": "C + ◌్ → C̚", "description": "Suppresses /a/ after consonant base for conjuncts."},
+
+      {"id": "translit_iso15919", "type": "TransliterationMap", "standard": "ISO 15919", "maps": [
+        {"telugu": "క", "roman": "ka"}, {"telugu": "కి", "roman": "ki"}, {"telugu": "ఋ", "roman": "r̥"}, {"telugu": "ఱ", "roman": "ṟa"}
+      ]},
+
+
+      {"id": "noun_template_common", "type": "Template", "subtype": "NounParadigm", "features": ["gender", "number", "case"], "cases": ["nom", "acc", "dat", "gen", "ins", "loc", "abl", "voc"], "pluralMarker": "లు"},
+
+      {"id": "noun_pilli", "type": "Lexeme", "subtype": "Noun", "lemma": "పిల్లి", "romanization": "pilli", "meaning": [{"gloss": "cat", "domain": "animal"}], "properties": {"gender": "feminine", "animacy": "animate"}, "inflections": {"plural": "పిల్లులు", "accusative": "పిల్లిని", "genitive": "పిల్లి యొక్క"}},
+      {"id": "noun_illu", "type": "Lexeme", "subtype": "Noun", "lemma": "ఇంటి", "lemmaCitation": "ఇల్లు", "romanization": "illu", "meaning": [{"gloss": "house"}], "properties": {"gender": "neuter"}, "inflections": {"nom": "ఇల్లు", "acc": "ఇల్లును", "loc": "ఇల్లులో"}},
+
+      {"id": "case_acc", "type": "Morpheme", "subtype": "CaseSuffix", "suffix": "ని", "romanization": "-ni", "case": "accusative", "function": "marks direct object", "examples": ["పిల్లిని చూశాను"]},
+      {"id": "case_dat", "type": "Morpheme", "subtype": "CaseSuffix", "suffix": "కి", "allomorphs": ["కు"], "romanization": "-ki/-ku", "case": "dative", "function": "marks indirect object/recipient"},
+      {"id": "case_gen", "type": "Morpheme", "subtype": "CaseSuffix", "suffix": "యొక్క", "romanization": "-yokka", "case": "genitive", "function": "possession", "register": "formal", "colloquial": ["-di", "-ni"]},
+      {"id": "case_ins", "type": "Morpheme", "subtype": "CaseSuffix", "suffix": "తో", "romanization": "-tō", "case": "instrumental", "function": "with/by"},
+      {"id": "case_loc", "type": "Morpheme", "subtype": "CaseSuffix", "suffix": "లో", "romanization": "-lō", "case": "locative", "function": "in/at"},
+      {"id": "case_abl", "type": "Morpheme", "subtype": "CaseSuffix", "suffix": "నుండి", "romanization": "-nundi", "case": "ablative", "function": "from"},
+      {"id": "case_voc", "type": "Morpheme", "subtype": "CaseSuffix", "suffix": "ఓ", "romanization": "ō", "case": "vocative", "function": "address"},
+
+      {"id": "deriv_suffix_tanam", "type": "Morpheme", "subtype": "Derivational", "suffix": "తనం", "function": "abstract noun formation", "example": "మంచి → మంచితనం"},
+      {"id": "deriv_suffix_vadu", "type": "Morpheme", "subtype": "Derivational", "suffix": "వాడు", "function": "agent/person X-er", "example": "బోధించు → బోధకుడు/బోధించే వాడు"},
+      {"id": "hon_suffix_garu", "type": "PragmaticMarker", "suffix": "గారు", "function": "honorific", "example": "రామ → రామగారు"},
+
+      {"id": "pronoun_paradigm", "type": "Paradigm", "subtype": "Pronoun", "forms": {
+        "1sg": {"nom": "నేను", "acc": "నన్ను", "dat": "నాకు"},
+        "2sg": {"nom": "నువ్వు", "acc": "నిన్ను", "dat": "నీకు", "polite": {"nom": "మీరు", "acc": "మిమ్మల్ని", "dat": "మీకు"}},
+        "3sg.m": {"nom": "అతను", "acc": "అతన్ని", "dat": "అతనికి"},
+        "3sg.f": {"nom": "ఆమె", "acc": "ఆమెని", "dat": "ఆమెకు"},
+        "3sg.n": {"nom": "అది", "acc": "దాన్ని", "dat": "దానికి"},
+        "3pl.hon": {"nom": "వారు", "acc": "వారిని", "dat": "వారికి"}
+      }},
+
+      {"id": "verb_tinu", "type": "Lexeme", "subtype": "Verb", "lemma": "తిను", "romanization": "tinu", "meaning": [{"gloss": "to eat", "transitivity": "transitive"}], "root": "తిన్", "stem": "తిన్", "class": "class-1", "voice": "active"},
+      {"id": "verb_undu", "type": "Lexeme", "subtype": "Verb", "lemma": "ఉండు", "meaning": [{"gloss": "to be/stay", "transitivity": "intransitive"}]},
+
+      {"id": "tense_pres_3sg_f_n", "type": "Morpheme", "subtype": "TenseSuffix", "tense": "present/future", "person": "third", "number": "singular", "suffix": "తుంది", "gender": ["feminine", "neuter"], "example": "పిల్లి తింటుంది"},
+      {"id": "tense_pres_3sg_m", "type": "Morpheme", "subtype": "TenseSuffix", "tense": "present/future", "person": "third", "number": "singular", "suffix": "తాడు", "gender": ["masculine"], "example": "అతను తింటాడు"},
+      {"id": "tense_past_3sg_m", "type": "Morpheme", "subtype": "TenseSuffix", "tense": "past", "person": "third", "number": "singular", "suffix": "న్నాడు", "example": "అతను తిన్నాడు"},
+      {"id": "tense_past_3sg_f", "type": "Morpheme", "subtype": "TenseSuffix", "tense": "past", "person": "third", "number": "singular", "suffix": "ంది", "example": "ఆమె తింది/తిన్నది"},
+      {"id": "aspect_prog", "type": "Morpheme", "subtype": "Aspect", "suffix": "తూ ఉంది", "function": "progressive", "example": "తింటూ ఉంది"},
+      {"id": "aspect_habitual", "type": "Morpheme", "subtype": "Aspect", "suffix": "తుంటాడు", "function": "habitual", "example": "తింటుంటాడు"},
+      {"id": "neg_suffix_lenu", "type": "Morpheme", "subtype": "Negation", "suffix": "లేను", "function": "simple negation (1sg/neutral)", "example": "నేను తినను/తినలేను"},
+
+      {"id": "converb_gerund", "type": "Morpheme", "subtype": "Converb", "suffix": "ి", "function": "conjunctive participle", "example": "తిని వెళ్లాడు"},
+      {"id": "participle_perfective", "type": "Morpheme", "subtype": "Participle", "suffix": "న", "function": "perfective participle (adnominal)", "example": "చదివిన పుస్తకం"},
+
+      {"id": "syntax_sov", "type": "SyntacticRule", "name": "SOV Word Order", "description": "Default SOV order; postpositions and case markers crucial.", "structure": "NP + NP + VP", "example": "పిల్లి ఎలుకని తింటుంది", "romanizedExample": "Pilli elukani tin-tundi", "gloss": "cat mouse-acc eat-3sg"},
+      {"id": "syntax_relative_clause", "type": "SyntacticRule", "name": "Relative Clause", "description": "Participial relative clauses using -న/-ని.", "example": "చదివిన పుస్తకం"},
+      {"id": "syntax_focus_movement", "type": "SyntacticRule", "name": "Focus/Topic movement", "description": "Word-order variation for focus; particle కదా/గదా for assertion."},
+      {"id": "syntax_yesno_q", "type": "SyntacticRule", "name": "Yes/No Question", "description": "Polar questions with rising intonation; particle -నా optional.", "example": "వస్తావా?"},
+
+      {"id": "dep_subj", "type": "GrammaticalRelation", "relation": "subject", "description": "Agent/doer (nominative)."},
+      {"id": "dep_obj", "type": "GrammaticalRelation", "relation": "object", "description": "Theme/patient (accusative -ని)."},
+      {"id": "dep_iobj", "type": "GrammaticalRelation", "relation": "indirectObject", "description": "Recipient/goal (dative -కి/-కు)."},
+
+      {"id": "semantic_animal", "type": "SemanticConcept", "name": "Animal", "uri": "http://dbpedia.org/ontology/Animal", "hypernyms": ["LivingBeing"], "hyponyms": ["Feline", "Canine", "Bird"]},
+      {"id": "semantic_feline", "type": "SemanticConcept", "name": "Feline", "uri": "http://dbpedia.org/ontology/Feline", "hypernyms": ["Animal"], "examples": ["పిల్లి", "సింహం", "పులి"]},
+      {"id": "theta_agent", "type": "SemanticRole", "role": "Agent", "description": "Intentional doer"},
+      {"id": "theta_theme", "type": "SemanticRole", "role": "Theme", "description": "Affected entity"},
+
+      {"id": "prag_polite_imp", "type": "PragmaticMarker", "marker": "-ండి", "function": "polite imperative", "example": "కూర్చోండి"},
+      {"id": "prag_intimate_imp", "type": "PragmaticMarker", "marker": "-ు", "function": "intimate imperative", "example": "ఉండు"},
+      {"id": "prag_particle_kada", "type": "PragmaticMarker", "marker": "కదా/గదా", "function": "assertive tag", "example": "ఇది మంచిదే కదా?"},
+      {"id": "prag_particle_amma", "type": "PragmaticMarker", "marker": "అమ్మా/నాన్నా", "function": "vocative soften/appeal"},
+
+      {"id": "ud_mapping", "type": "UDMapping", "upos": {"NOUN": ["N"], "VERB": ["V"], "AUX": ["ఉండు", "వచ్చు"], "ADP": ["postpositions"], "PART": ["particles"], "PRON": ["pronouns"]}},
+
+      {"id": "morphophon_rule_tinu_past", "type": "MorphophonemicRule", "description": "తిన్ + నాడు → తిన్నాడు (gemination before past masculine)", "pattern": "n → nn / _ {నాడు, నది}", "example": "తిను → తిన్నాడు"},
+      {"id": "morphophon_rule_dative_allomorph", "type": "MorphophonemicRule", "description": "-కి/-కు allomorphy based on preceding segment (front vowels favor -కి)", "condition": "phonotactics", "example": "రాము → రాముకు; సీత → సీతకి"},
+
+      {"id": "construction_compound_tatpurusha", "type": "Construction", "name": "Tatpuruṣa Compound", "pattern": "N1 (dependent) + N2 (head)", "semantics": "N2 of N1", "example": "రాజమార్గం (king-road → royal road)"},
+      {"id": "construction_karmadharaya", "type": "Construction", "name": "Karmadhāraya Compound", "pattern": "Adj + N", "semantics": "N that is Adj", "example": "సుందరి మహిళ"}
+    ],
+
+    "edges": [
+      {"from": "consonant_ka", "to": "matra_i", "relationship": "combinesWith", "result": "కి", "rule": "rule_gunintam_k_i"},
+      {"from": "rule_gunintam_k_i", "to": "consonant_ka", "relationship": "appliesTo"},
+      {"from": "rule_gunintam_k_i", "to": "matra_i", "relationship": "requiresModifier"},
+
+      {"from": "noun_pilli", "to": "case_acc", "relationship": "takesCase", "form": "పిల్లిని", "role": "object"},
+      {"from": "noun_pilli", "to": "semantic_feline", "relationship": "isA"},
+      {"from": "semantic_feline", "to": "semantic_animal", "relationship": "isA"},
+
+      {"from": "verb_tinu", "to": "tense_pres_3sg_f_n", "relationship": "conjugatesWith", "form": "తింటుంది", "person": "third", "number": "singular"},
+      {"from": "verb_tinu", "to": "tense_pres_3sg_m", "relationship": "conjugatesWith", "form": "తింటాడు"},
+      {"from": "verb_tinu", "to": "tense_past_3sg_m", "relationship": "conjugatesWith", "form": "తిన్నాడు"},
+
+      {"from": "verb_tinu", "to": "dep_obj", "relationship": "assignsRole", "thetaRole": "theta_theme"},
+      {"from": "verb_tinu", "to": "dep_subj", "relationship": "assignsRole", "thetaRole": "theta_agent"},
+
+      {"from": "syntax_sov", "to": "noun_pilli", "relationship": "hasExampleComponent", "role": "subject"},
+      {"from": "syntax_sov", "to": "case_acc", "relationship": "usesCaseMarker", "role": "objectMarker"},
+      {"from": "syntax_sov", "to": "verb_tinu", "relationship": "hasExampleComponent", "role": "verb"},
+
+      {"from": "morphophon_rule_tinu_past", "to": "verb_tinu", "relationship": "appliesTo"},
+      {"from": "morphophon_rule_dative_allomorph", "to": "case_dat", "relationship": "appliesTo"},
+
+      {"from": "construction_compound_tatpurusha", "to": "noun_template_common", "relationship": "licenses"},
+      {"from": "construction_karmadharaya", "to": "noun_template_common", "relationship": "licenses"},
+
+      {"from": "translit_iso15919", "to": "vowel_rr", "relationship": "mapsTo"},
+      {"from": "translit_iso15919", "to": "consonant_rra", "relationship": "mapsTo"}
+    ],
+
+    "validation": {
+      "jsonSchema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "title": "KG-Telugu v3",
+        "type": "object",
+        "required": ["metadata", "graph"],
+        "properties": {
+          "metadata": {"type": "object"},
+          "graph": {
+            "type": "object",
+            "required": ["nodes", "edges"],
+            "properties": {
+              "nodes": {"type": "array", "items": {"type": "object", "required": ["id", "type"]}},
+              "edges": {"type": "array", "items": {"type": "object", "required": ["from", "to", "relationship"]}}
+            }
+          }
+        }
+      }
+    },
+
+    "nlu_generation": {
+      "analyzer": {
+        "steps": [
+          "tokenize_graph_graphemes",
+          "morph_analyze (rules + lexicon)",
+          "apply_morphophonemics",
+          "map_UD",
+          "build_dependency_tree",
+          "semantic_role_labeling"
+        ]
+      },
+      "generator": {
+        "inputs": ["lemma", "features (tense, person, number, gender)", "syntax_frame"],
+        "procedure": ["select_paradigm", "attach_morphemes", "apply_allomorphy", "apply_phonological_rules"]
+      }
+    }
+  }
+}

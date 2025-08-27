@@ -1,0 +1,73 @@
+{
+"metadata": {
+"name": "Telugu Reasoning KG",
+"version": "1.0",
+"purpose": "Production-grade commonsense + world knowledge graph"
+},
+"ontology": {
+"classes": \[
+"Entity", "LivingBeing", "Animal", "Plant", "Human",
+"Object", "Food", "Tool", "Building",
+"Event", "NaturalEvent", "HumanEvent",
+"Property"
+],
+"relations": \[
+"isA", "hasPart", "partOf", "eats", "eatenBy",
+"produces", "needs", "livesIn", "locatedIn",
+"causes", "causedBy", "usedFor", "hasProperty"
+],
+"metadataProperties": \["source", "confidence", "createdAt", "updatedAt", "license"]
+},
+"facts": \[
+{"subject": "పిల్లి", "predicate": "isA", "object": "Animal", "confidence": 0.95},
+{"subject": "పిల్లి", "predicate": "eats", "object": "పాలు"},
+{"subject": "పిల్లి", "predicate": "eats", "object": "చేప"},
+{"subject": "పిల్లి", "predicate": "hasProperty", "object": "చురుకైనది"},
+{"subject": "కుక్క", "predicate": "isA", "object": "Animal"},
+{"subject": "కుక్క", "predicate": "eats", "object": "ఎముకలు"},
+{"subject": "కుక్క", "predicate": "hasProperty", "object": "నమ్మకమైనది"},
+{"subject": "ఆవు", "predicate": "isA", "object": "Animal"},
+{"subject": "ఆవు", "predicate": "gives", "object": "పాలు"},
+{"subject": "పాలు", "predicate": "hasProperty", "object": "కాల్షియం"},
+{"subject": "పాలు", "predicate": "isDrinkable", "object": true},
+{"subject": "చేప", "predicate": "isFood", "object": true},
+{"subject": "చేప", "predicate": "livesIn", "object": "నీరు"},
+{"subject": "చేప", "predicate": "hasProperty", "object": "ఈత కొడుతుంది"},
+{"subject": "మొక్క", "predicate": "isA", "object": "Plant"},
+{"subject": "మొక్క", "predicate": "needs", "object": "నీరు"},
+{"subject": "మొక్క", "predicate": "needs", "object": "సూర్యకాంతి"},
+{"subject": "మొక్క", "predicate": "produces", "object": "ఆక్సిజన్"},
+{"subject": "మనిషి", "predicate": "isA", "object": "Human"},
+{"subject": "మనిషి", "predicate": "eats", "object": "ఆహారం"},
+{"subject": "మనిషి", "predicate": "drinks", "object": "నీరు"},
+{"subject": "మనిషి", "predicate": "livesIn", "object": "ఇల్లు"},
+{"subject": "మనిషి", "predicate": "hasProperty", "object": "బుద్ధి"},
+{"subject": "ఇల్లు", "predicate": "hasPart", "object": "గది"},
+{"subject": "ఇల్లు", "predicate": "hasPart", "object": "వంటగది"},
+{"subject": "ఇల్లు", "predicate": "usedFor", "object": "నివాసం"},
+{"subject": "అగ్ని", "predicate": "causes", "object": "వేడి"},
+{"subject": "అగ్ని", "predicate": "causes", "object": "కాంతి"},
+{"subject": "నీరు", "predicate": "hasProperty", "object": "తాగదగినది"},
+{"subject": "నీరు", "predicate": "isDrinkable", "object": true},
+{"subject": "సూర్యుడు", "predicate": "gives", "object": "వెలుగు"},
+{"subject": "సూర్యుడు", "predicate": "gives", "object": "వేడి"},
+{"subject": "సూర్యుడు", "predicate": "isSourceOf", "object": "శక్తి"},
+{"subject": "చంద్రుడు", "predicate": "isA", "object": "Satellite"},
+{"subject": "చంద్రుడు", "predicate": "reflects", "object": "సూర్యకాంతి"},
+{"subject": "వాన", "predicate": "causes", "object": "నీరు"},
+{"subject": "వాన", "predicate": "helps", "object": "వ్యవసాయం"},
+{"subject": "పుస్తకం", "predicate": "usedFor", "object": "విద్య"},
+{"subject": "పెన్", "predicate": "usedFor", "object": "రాయడం"},
+{"subject": "కత్తి", "predicate": "usedFor", "object": "కత్తిరించడం"},
+{"subject": "అన్నం", "predicate": "isFood", "object": true},
+{"subject": "అన్నం", "predicate": "madeFrom", "object": "బియ్యం"},
+{"subject": "బియ్యం", "predicate": "isA", "object": "ధాన్యం"},
+{"subject": "ధాన్యం", "predicate": "isFood", "object": true}
+],
+"rules": \[
+{"if": \["X isA Animal", "X eats Y"], "then": "Y isFood true"},
+{"if": \["X isA Plant", "X needs Y"], "then": "Y isEssentialForLife true"},
+{"if": \["X hasPart Y"], "then": "Y partOf X"},
+{"if": \["X causes Y", "Y causes Z"], "then": "X indirectlyCauses Z"}
+]
+}

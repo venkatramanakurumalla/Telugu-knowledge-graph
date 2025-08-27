@@ -1,0 +1,802 @@
+[
+  {
+    "id": 1,
+    "root": "చేయు",
+    "meaning": "to do, to make",
+    "present": "చేస్తాడు",
+    "past": "చేశాడు",
+    "future": "చేస్తాడు"
+  },
+  {
+    "id": 2,
+    "root": "రాయు",
+    "meaning": "to write",
+    "present": "రాస్తాడు",
+    "past": "రాశాడు",
+    "future": "రాస్తాడు"
+  },
+  {
+    "id": 3,
+    "root": "చదువు",
+    "meaning": "to read, to study",
+    "present": "చదుస్తాడు",
+    "past": "చదివాడు",
+    "future": "చదుస్తాడు"
+  },
+  {
+    "id": 4,
+    "root": "పోవు",
+    "meaning": "to go",
+    "present": "వెళ్తాడు",
+    "past": "వెళ్ళాడు",
+    "future": "వెళ్తాడు"
+  },
+  {
+    "id": 5,
+    "root": "రాయి",
+    "meaning": "to come",
+    "present": "వస్తాడు",
+    "past": "వచ్చాడు",
+    "future": "వస్తాడు"
+  },
+  {
+    "id": 6,
+    "root": "మాట్లాడు",
+    "meaning": "to speak",
+    "present": "మాట్లాడుతాడు",
+    "past": "మాట్లాడాడు",
+    "future": "మాట్లాడుతాడు"
+  },
+  {
+    "id": 7,
+    "root": "చూడు",
+    "meaning": "to see",
+    "present": "చూస్తాడు",
+    "past": "చూశాడు",
+    "future": "చూస్తాడు"
+  },
+  {
+    "id": 8,
+    "root": "విను",
+    "meaning": "to hear, to listen",
+    "present": "వింటాడు",
+    "past": "విన్నాడు",
+    "future": "వింటాడు"
+  },
+  {
+    "id": 9,
+    "root": "తిను",
+    "meaning": "to eat",
+    "present": "తింటాడు",
+    "past": "తిన్నాడు",
+    "future": "తింటాడు"
+  },
+  {
+    "id": 10,
+    "root": "తాగు",
+    "meaning": "to drink",
+    "present": "తాగుతాడు",
+    "past": "తాగాడు",
+    "future": "తాగుతాడు"
+  },
+  {
+    "id": 11,
+    "root": "నడుచు",
+    "meaning": "to walk",
+    "present": "నడుస్తాడు",
+    "past": "నడిచాడు",
+    "future": "నడుస్తాడు"
+  },
+  {
+    "id": 12,
+    "root": "పరుగెత్తు",
+    "meaning": "to run",
+    "present": "పరుగెత్తుతాడు",
+    "past": "పరిగెత్తాడు",
+    "future": "పరుగెత్తుతాడు"
+  },
+  {
+    "id": 13,
+    "root": "నిద్రపో",
+    "meaning": "to sleep",
+    "present": "నిద్రిస్తాడు",
+    "past": "నిద్రించాడు",
+    "future": "నిద్రిస్తాడు"
+  },
+  {
+    "id": 14,
+    "root": "పాడు",
+    "meaning": "to sing",
+    "present": "పాడుతాడు",
+    "past": "పాడాడు",
+    "future": "పాడుతాడు"
+  },
+  {
+    "id": 15,
+    "root": "ఆడు",
+    "meaning": "to play",
+    "present": "ఆడుతాడు",
+    "past": "ఆడాడు",
+    "future": "ఆడుతాడు"
+  },
+  {
+    "id": 16,
+    "root": "చంపు",
+    "meaning": "to kill",
+    "present": "చంపుతాడు",
+    "past": "చంపాడు",
+    "future": "చంపుతాడు"
+  },
+  {
+    "id": 17,
+    "root": "కొట్టు",
+    "meaning": "to beat, to hit",
+    "present": "కొడుతాడు",
+    "past": "కొట్టాడు",
+    "future": "కొడుతాడు"
+  },
+  {
+    "id": 18,
+    "root": "పట్టు",
+    "meaning": "to catch, to hold",
+    "present": "పట్టుకుంటాడు",
+    "past": "పట్టుకున్నాడు",
+    "future": "పట్టుకుంటాడు"
+  },
+  {
+    "id": 19,
+    "root": "కనిపించు",
+    "meaning": "to appear",
+    "present": "కనిపిస్తాడు",
+    "past": "కనిపించాడు",
+    "future": "కనిపిస్తాడు"
+  },
+  {
+    "id": 20,
+    "root": "అను",
+    "meaning": "to say",
+    "present": "అంటాడు",
+    "past": "అన్నాడు",
+    "future": "అంటాడు"
+  },
+  {
+    "id": 21,
+    "root": "ఇవ్వు",
+    "meaning": "to give",
+    "present": "ఇస్తాడు",
+    "past": "ఇచ్చాడు",
+    "future": "ఇస్తాడు"
+  },
+  {
+    "id": 22,
+    "root": "తీసుకో",
+    "meaning": "to take",
+    "present": "తీసుకుంటాడు",
+    "past": "తీసుకున్నాడు",
+    "future": "తీసుకుంటాడు"
+  },
+  {
+    "id": 23,
+    "root": "కొను",
+    "meaning": "to buy",
+    "present": "కొంటాడు",
+    "past": "కొన్నాడు",
+    "future": "కొంటాడు"
+  },
+  {
+    "id": 24,
+    "root": "అమ్ము",
+    "meaning": "to sell",
+    "present": "అమ్ముతాడు",
+    "past": "అమ్మాడు",
+    "future": "అమ్ముతాడు"
+  },
+  {
+    "id": 25,
+    "root": "పని చేయు",
+    "meaning": "to work",
+    "present": "పని చేస్తాడు",
+    "past": "పని చేశాడు",
+    "future": "పని చేస్తాడు"
+  },
+  {
+    "id": 26,
+    "root": "పడు",
+    "meaning": "to fall",
+    "present": "పడుతాడు",
+    "past": "పడ్డాడు",
+    "future": "పడుతాడు"
+  },
+  {
+    "id": 27,
+    "root": "ఎగరే",
+    "meaning": "to fly",
+    "present": "ఎగురుతాడు",
+    "past": "ఎగిరాడు",
+    "future": "ఎగురుతాడు"
+  },
+  {
+    "id": 28,
+    "root": "ఎక్కు",
+    "meaning": "to climb, to board",
+    "present": "ఎక్కుతాడు",
+    "past": "ఎక్కాడు",
+    "future": "ఎక్కుతాడు"
+  },
+  {
+    "id": 29,
+    "root": "దాటు",
+    "meaning": "to cross",
+    "present": "దాటుతాడు",
+    "past": "దాటాడు",
+    "future": "దాటుతాడు"
+  },
+  {
+    "id": 30,
+    "root": "పంపు",
+    "meaning": "to send",
+    "present": "పంపుతాడు",
+    "past": "పంపాడు",
+    "future": "పంపుతాడు"
+  },
+  {
+    "id": 31,
+    "root": "పిలుచు",
+    "meaning": "to call",
+    "present": "పిలుస్తాడు",
+    "past": "పిలిచాడు",
+    "future": "పిలుస్తాడు"
+  },
+  {
+    "id": 32,
+    "root": "చెప్పు",
+    "meaning": "to tell",
+    "present": "చెప్పుతాడు",
+    "past": "చెప్పాడు",
+    "future": "చెప్పుతాడు"
+  },
+  {
+    "id": 33,
+    "root": "చూపు",
+    "meaning": "to show",
+    "present": "చూపిస్తాడు",
+    "past": "చూపించాడు",
+    "future": "చూపిస్తాడు"
+  },
+  {
+    "id": 34,
+    "root": "తోడు",
+    "meaning": "to help",
+    "present": "సహాయం చేస్తాడు",
+    "past": "సహాయం చేశాడు",
+    "future": "సహాయం చేస్తాడు"
+  },
+  {
+    "id": 35,
+    "root": "కూర్చో",
+    "meaning": "to sit",
+    "present": "కూర్చుంటాడు",
+    "past": "కూర్చున్నాడు",
+    "future": "కూర్చుంటాడు"
+  },
+  {
+    "id": 36,
+    "root": "నిలబడు",
+    "meaning": "to stand",
+    "present": "నిలబడతాడు",
+    "past": "నిలబడ్డాడు",
+    "future": "నిలబడతాడు"
+  },
+  {
+    "id": 37,
+    "root": "పరిగణించు",
+    "meaning": "to consider",
+    "present": "పరిగణిస్తాడు",
+    "past": "పరిగణించాడు",
+    "future": "పరిగణిస్తాడు"
+  },
+  {
+    "id": 38,
+    "root": "ఊహించు",
+    "meaning": "to imagine",
+    "present": "ఊహిస్తాడు",
+    "past": "ఊహించాడు",
+    "future": "ఊహిస్తాడు"
+  },
+  {
+    "id": 39,
+    "root": "నమ్ము",
+    "meaning": "to believe",
+    "present": "నమ్ముతాడు",
+    "past": "నమ్మాడు",
+    "future": "నమ్ముతాడు"
+  },
+  {
+    "id": 40,
+    "root": "అరుసు",
+    "meaning": "to shout",
+    "present": "అరుస్తాడు",
+    "past": "అరిచాడు",
+    "future": "అరుస్తాడు"
+  },
+  {
+    "id": 41,
+    "root": "ఏడుచు",
+    "meaning": "to cry",
+    "present": "ఏడుస్తాడు",
+    "past": "ఏడిచాడు",
+    "future": "ఏడుస్తాడు"
+  },
+  {
+    "id": 42,
+    "root": "నవ్వు",
+    "meaning": "to laugh",
+    "present": "నవ్వుతాడు",
+    "past": "నవ్వాడు",
+    "future": "నవ్వుతాడు"
+  },
+  {
+    "id": 43,
+    "root": "ఊపిరి పీల్చు",
+    "meaning": "to breathe",
+    "present": "ఊపిరి పీలుస్తాడు",
+    "past": "ఊపిరి పీల్చుకున్నాడు",
+    "future": "ఊపిరి పీలుస్తాడు"
+  },
+  {
+    "id": 44,
+    "root": "కొరుకు",
+    "meaning": "to bite",
+    "present": "కొరుస్తాడు",
+    "past": "కొరికాడు",
+    "future": "కొరుస్తాడు"
+  },
+  {
+    "id": 45,
+    "root": "గీయు",
+    "meaning": "to draw",
+    "present": "గీస్తాడు",
+    "past": "గీశాడు",
+    "future": "గీస్తాడు"
+  },
+  {
+    "id": 46,
+    "root": "తీసుకువెళ్లు",
+    "meaning": "to carry",
+    "present": "తీసుకువెళ్తాడు",
+    "past": "తీసుకువెళ్ళాడు",
+    "future": "తీసుకువెళ్తాడు"
+  },
+  {
+    "id": 47,
+    "root": "పారు",
+    "meaning": "to flow",
+    "present": "పొంగుతుంది",
+    "past": "పొంగింది",
+    "future": "పొంగుతుంది"
+  },
+  {
+    "id": 48,
+    "root": "మారు",
+    "meaning": "to change",
+    "present": "మారుతాడు",
+    "past": "మారాడు",
+    "future": "మారుతాడు"
+  },
+  {
+    "id": 49,
+    "root": "ప్రయత్నించు",
+    "meaning": "to try",
+    "present": "ప్రయత్నిస్తాడు",
+    "past": "ప్రయత్నించాడు",
+    "future": "ప్రయత్నిస్తాడు"
+  },
+  {
+    "id": 50,
+    "root": "అర్థం చేసుకో",
+    "meaning": "to understand",
+    "present": "అర్థం చేసుకుంటాడు",
+    "past": "అర్థం చేసుకున్నాడు",
+    "future": "అర్థం చేసుకుంటాడు"
+  },
+  {
+    "id": 51,
+    "root": "నిర్ణయించు",
+    "meaning": "to decide",
+    "present": "నిర్ణయిస్తాడు",
+    "past": "నిర్ణయించాడు",
+    "future": "నిర్ణయిస్తాడు"
+  },
+  {
+    "id": 52,
+    "root": "ప్రార్థించు",
+    "meaning": "to pray",
+    "present": "ప్రార్థిస్తాడు",
+    "past": "ప్రార్థించాడు",
+    "future": "ప్రార్థిస్తాడు"
+  },
+  {
+    "id": 53,
+    "root": "కొలువు",
+    "meaning": "to worship",
+    "present": "కొలుస్తాడు",
+    "past": "కొలిచాడు",
+    "future": "కొలుస్తాడు"
+  },
+  {
+    "id": 54,
+    "root": "విచారించు",
+    "meaning": "to investigate",
+    "present": "విచారిస్తాడు",
+    "past": "విచారించాడు",
+    "future": "విచారిస్తాడు"
+  },
+  {
+    "id": 55,
+    "root": "పండించు",
+    "meaning": "to cultivate",
+    "present": "పండిస్తాడు",
+    "past": "పండించాడు",
+    "future": "పండిస్తాడు"
+  },
+  {
+    "id": 56,
+    "root": "పంట కోయు",
+    "meaning": "to harvest",
+    "present": "పంట కోస్తాడు",
+    "past": "పంట కోశాడు",
+    "future": "పంట కోస్తాడు"
+  },
+  {
+    "id": 57,
+    "root": "పాడు",
+    "meaning": "to spoil, to waste",
+    "present": "పాడుచేస్తాడు",
+    "past": "పాడుచేశాడు",
+    "future": "పాడుచేస్తాడు"
+  },
+  {
+    "id": 58,
+    "root": "కాపాడు",
+    "meaning": "to save, to protect",
+    "present": "కాపాడుతాడు",
+    "past": "కాపాడాడు",
+    "future": "కాపాడుతాడు"
+  },
+  {
+    "id": 59,
+    "root": "పట్టించు",
+    "meaning": "to attach",
+    "present": "పట్టిస్తాడు",
+    "past": "పట్టించాడు",
+    "future": "పట్టిస్తాడు"
+  },
+  {
+    "id": 60,
+    "root": "తీయు",
+    "meaning": "to remove",
+    "present": "తీసేస్తాడు",
+    "past": "తీసేశాడు",
+    "future": "తీసేస్తాడు"
+  },
+  {
+    "id": 61,
+    "root": "కట్టు",
+    "meaning": "to tie, to build",
+    "present": "కట్టుతాడు",
+    "past": "కట్టాడు",
+    "future": "కట్టుతాడు"
+  },
+  {
+    "id": 62,
+    "root": "విప్పు",
+    "meaning": "to untie",
+    "present": "విప్పుతాడు",
+    "past": "విప్పాడు",
+    "future": "విప్పుతాడు"
+  },
+  {
+    "id": 63,
+    "root": "తోడు",
+    "meaning": "to mix",
+    "present": "కలపతాడు",
+    "past": "కలిపాడు",
+    "future": "కలపతాడు"
+  },
+  {
+    "id": 64,
+    "root": "విడదీయు",
+    "meaning": "to separate",
+    "present": "విడదీస్తాడు",
+    "past": "విడదీశాడు",
+    "future": "విడదీస్తాడు"
+  },
+  {
+    "id": 65,
+    "root": "పొందు",
+    "meaning": "to obtain",
+    "present": "పొందుతాడు",
+    "past": "పొందాడు",
+    "future": "పొందుతాడు"
+  },
+  {
+    "id": 66,
+    "root": "అడుగు",
+    "meaning": "to ask",
+    "present": "అడుగుతాడు",
+    "past": "అడిగాడు",
+    "future": "అడుగుతాడు"
+  },
+  {
+    "id": 67,
+    "root": "పరీక్షించు",
+    "meaning": "to test",
+    "present": "పరీక్షిస్తాడు",
+    "past": "పరీక్షించాడు",
+    "future": "పరీక్షిస్తాడు"
+  },
+  {
+    "id": 68,
+    "root": "గుర్తించు",
+    "meaning": "to identify",
+    "present": "గుర్తిస్తాడు",
+    "past": "గుర్తించాడు",
+    "future": "గుర్తిస్తాడు"
+  },
+  {
+    "id": 69,
+    "root": "పరిష్కరించు",
+    "meaning": "to solve",
+    "present": "పరిష్కరిస్తాడు",
+    "past": "పరిష్కరించాడు",
+    "future": "పరిష్కరిస్తాడు"
+  },
+  {
+    "id": 70,
+    "root": "ప్రయాణించు",
+    "meaning": "to travel",
+    "present": "ప్రయాణిస్తాడు",
+    "past": "ప్రయాణించాడు",
+    "future": "ప్రయాణిస్తాడు"
+  },
+  {
+    "id": 71,
+    "root": "పెంచు",
+    "meaning": "to grow, to raise",
+    "present": "పెంచుతాడు",
+    "past": "పెంచాడు",
+    "future": "పెంచుతాడు"
+  },
+  {
+    "id": 72,
+    "root": "తగ్గు",
+    "meaning": "to reduce",
+    "present": "తగ్గిస్తాడు",
+    "past": "తగ్గించాడు",
+    "future": "తగ్గిస్తాడు"
+  },
+  {
+    "id": 73,
+    "root": "పెంచు",
+    "meaning": "to increase",
+    "present": "పెంచుతాడు",
+    "past": "పెంచాడు",
+    "future": "పెంచుతాడు"
+  },
+  {
+    "id": 74,
+    "root": "ఆపు",
+    "meaning": "to stop",
+    "present": "ఆపుతాడు",
+    "past": "ఆపాడు",
+    "future": "ఆపుతాడు"
+  },
+  {
+    "id": 75,
+    "root": "ప్రారంభించు",
+    "meaning": "to start",
+    "present": "ప్రారంభిస్తాడు",
+    "past": "ప్రారంభించాడు",
+    "future": "ప్రారంభిస్తాడు"
+  },
+  {
+    "id": 76,
+    "root": "ముగించు",
+    "meaning": "to finish",
+    "present": "ముగిస్తాడు",
+    "past": "ముగించాడు",
+    "future": "ముగిస్తాడు"
+  },
+  {
+    "id": 77,
+    "root": "అనుమతించు",
+    "meaning": "to allow",
+    "present": "అనుమతిస్తాడు",
+    "past": "అనుమతించాడు",
+    "future": "అనుమతిస్తాడు"
+  },
+  {
+    "id": 78,
+    "root": "నిషేధించు",
+    "meaning": "to prohibit",
+    "present": "నిషేధిస్తాడు",
+    "past": "నిషేధించాడు",
+    "future": "నిషేధిస్తాడు"
+  },
+  {
+    "id": 79,
+    "root": "అంగీకరించు",
+    "meaning": "to accept",
+    "present": "అంగీకరిస్తాడు",
+    "past": "అంగీకరించాడు",
+    "future": "అంగీకరిస్తాడు"
+  },
+  {
+    "id": 80,
+    "root": "తిరస్కరించు",
+    "meaning": "to reject",
+    "present": "తిరస్కరిస్తాడు",
+    "past": "తిరస్కరించాడు",
+    "future": "తిరస్కరిస్తాడు"
+  },
+  {
+    "id": 81,
+    "root": "ప్రేమించు",
+    "meaning": "to love",
+    "present": "ప్రేమిస్తాడు",
+    "past": "ప్రేమించాడు",
+    "future": "ప్రేమిస్తాడు"
+  },
+  {
+    "id": 82,
+    "root": "హత్య చేయు",
+    "meaning": "to murder",
+    "present": "హత్య చేస్తాడు",
+    "past": "హత్య చేశాడు",
+    "future": "హత్య చేస్తాడు"
+  },
+  {
+    "id": 83,
+    "root": "దొంగిలించు",
+    "meaning": "to steal",
+    "present": "దొంగిలిస్తాడు",
+    "past": "దొంగిలించాడు",
+    "future": "దొంగిలిస్తాడు"
+  },
+  {
+    "id": 84,
+    "root": "మోసం చేయు",
+    "meaning": "to cheat",
+    "present": "మోసం చేస్తాడు",
+    "past": "మోసం చేశాడు",
+    "future": "మోసం చేస్తాడు"
+  },
+  {
+    "id": 85,
+    "root": "అనుకో",
+    "meaning": "to think",
+    "present": "అనుకుంటాడు",
+    "past": "అనుకున్నాడు",
+    "future": "అనుకుంటాడు"
+  },
+  {
+    "id": 86,
+    "root": "గుర్తుంచుకో",
+    "meaning": "to remember",
+    "present": "గుర్తుంచుకుంటాడు",
+    "past": "గుర్తుంచుకున్నాడు",
+    "future": "గుర్తుంచుకుంటాడు"
+  },
+  {
+    "id": 87,
+    "root": "మరచిపో",
+    "meaning": "to forget",
+    "present": "మరిచిపోతాడు",
+    "past": "మరిచిపోయాడు",
+    "future": "మరిచిపోతాడు"
+  },
+  {
+    "id": 88,
+    "root": "ఊహించు",
+    "meaning": "to guess",
+    "present": "ఊహిస్తాడు",
+    "past": "ఊహించాడు",
+    "future": "ఊహిస్తాడు"
+  },
+  {
+    "id": 89,
+    "root": "అర్థం చేసుకో",
+    "meaning": "to realize",
+    "present": "అర్థం చేసుకుంటాడు",
+    "past": "అర్థం చేసుకున్నాడు",
+    "future": "అర్థం చేసుకుంటాడు"
+  },
+  {
+    "id": 90,
+    "root": "నమోదు చేయు",
+    "meaning": "to register",
+    "present": "నమోదు చేస్తాడు",
+    "past": "నమోదు చేశాడు",
+    "future": "నమోదు చేస్తాడు"
+  },
+  {
+    "id": 91,
+    "root": "ప్రవేశపెట్టు",
+    "meaning": "to enter",
+    "present": "ప్రవేశిస్తాడు",
+    "past": "ప్రవేశించాడు",
+    "future": "ప్రవేశిస్తాడు"
+  },
+  {
+    "id": 92,
+    "root": "నిష్క్రమించు",
+    "meaning": "to exit",
+    "present": "నిష్క్రమిస్తాడు",
+    "past": "నిష్క్రమించాడు",
+    "future": "నిష్క్రమిస్తాడు"
+  },
+  {
+    "id": 93,
+    "root": "ప్రయత్నించు",
+    "meaning": "to attempt",
+    "present": "ప్రయత్నిస్తాడు",
+    "past": "ప్రయత్నించాడు",
+    "future": "ప్రయత్నిస్తాడు"
+  },
+  {
+    "id": 94,
+    "root": "విఫలమవు",
+    "meaning": "to fail",
+    "present": "విఫలమవుతాడు",
+    "past": "విఫలమయ్యాడు",
+    "future": "విఫలమవుతాడు"
+  },
+  {
+    "id": 95,
+    "root": "విజయం సాధించు",
+    "meaning": "to succeed",
+    "present": "విజయం సాధిస్తాడు",
+    "past": "విజయం సాధించాడు",
+    "future": "విజయం సాధిస్తాడు"
+  },
+  {
+    "id": 96,
+    "root": "అభ్యసించు",
+    "meaning": "to practice",
+    "present": "అభ్యసిస్తాడు",
+    "past": "అభ్యసించాడు",
+    "future": "అభ్యసిస్తాడు"
+  },
+  {
+    "id": 97,
+    "root": "పోటీ పడు",
+    "meaning": "to compete",
+    "present": "పోటీ పడుతాడు",
+    "past": "పోటీ పడ్డాడు",
+    "future": "పోటీ పడుతాడు"
+  },
+  {
+    "id": 98,
+    "root": "ఓడించు",
+    "meaning": "to defeat",
+    "present": "ఓడిస్తాడు",
+    "past": "ఓడించాడు",
+    "future": "ఓడిస్తాడు"
+  },
+  {
+    "id": 99,
+    "root": "ఓడిపో",
+    "meaning": "to lose",
+    "present": "ఓడిపోతాడు",
+    "past": "ఓడిపోయాడు",
+    "future": "ఓడిపోతాడు"
+  },
+  {
+    "id": 100,
+    "root": "సాధించు",
+    "meaning": "to achieve",
+    "present": "సాధిస్తాడు",
+    "past": "సాధించాడు",
+    "future": "సాధిస్తాడు"
+  }
+]

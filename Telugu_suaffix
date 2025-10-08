@@ -1,1 +1,172 @@
 
+# ---------------------------
+# Telugu Morphological Suffix Taxonomy (from TurboKG Morphology Suite v3.0)
+# ---------------------------
+_TELUGU_SUFFIX_DATA = {
+  "nominative": {
+    "డు": {"gender": "masculine", "number": "singular"},
+    "ము": {"gender": "neuter", "number": "singular"},
+    "వు": {"gender": "neuter", "number": "singular"},
+    "లు": {"number": "plural"},
+    "వారు": {"honorific": True, "number": "plural"},
+    "గారు": {"honorific": True},
+    "మండి": {"collective": True}
+  },
+  "accusative": {
+    "ని": {"case": "accusative"},
+    "ను": {"case": "accusative"},
+    "నున్": {"case": "accusative"},
+    "నిన్": {"case": "accusative"},
+    "లన్": {"number": "plural"},
+    "గురించి": {"meaning": "regarding"},
+    "కూర్చి": {"meaning": "about/concerning"},
+    "పైన": {"meaning": "about"},
+    "మీద": {"meaning": "on/about"}
+  },
+  "instrumental": {
+    "తో": {"meaning": "with/by"},
+    "చేత": {"meaning": "by/through"},
+    "చేతన": {"meaning": "by means of"},
+    "ద్వారా": {"meaning": "through"},
+    "బట్టి": {"meaning": "according to"},
+    "వల్ల": {"meaning": "because of"}
+  },
+  "dative": {
+    "కు": {"meaning": "to/for"},
+    "కి": {"meaning": "to/for"},
+    "కై": {"meaning": "for"},
+    "కొరకు": {"meaning": "for"},
+    "కోసం": {"meaning": "for/sake of"},
+    "కొఱకున్": {"archaic": True},
+    "కోఱకు": {"archaic": True}
+  },
+  "ablative": {
+    "నుంచి": {"meaning": "from"},
+    "నుండి": {"meaning": "from"},
+    "వలన": {"meaning": "due to/from"},
+    "వల్ల": {"meaning": "because of"},
+    "కంటే": {"meaning": "than"},
+    "కంటె": {"meaning": "than"},
+    "పట్టి": {"meaning": "regarding/from"}
+  },
+  "genitive": {
+    "యొక్క": {"meaning": "of"},
+    "యొక్కది": {"meaning": "belonging to"},
+    "ది": {"possessive_suffix": True}
+  },
+  "locative": {
+    "లో": {"meaning": "in"},
+    "లోపల": {"meaning": "inside"},
+    "లోన్": {"archaic": True},
+    "పై": {"meaning": "on/above"},
+    "క్రింద": {"meaning": "below"},
+    "వద్ద": {"meaning": "at/near"},
+    "దగ్గర": {"meaning": "near"}
+  },
+  "vocative": {
+    "ఓ": {"meaning": "address"},
+    "ఓయీ": {"meaning": "address"},
+    "ఓరీ": {"meaning": "address"},
+    "అయ్యా": {"meaning": "sir"},
+    "అమ్మా": {"meaning": "mother"},
+    "బాబూ": {"meaning": "dear"}
+  },
+  "verbal": {
+    "తున్నాడు": {"tense": "present_continuous", "person": 3},
+    "తున్నాను": {"tense": "present_continuous", "person": 1},
+    "తున్నావు": {"tense": "present_continuous", "person": 2},
+    "తున్నారు": {"tense": "present_continuous", "person": 3},
+    "తున్నాయి": {"tense": "present_continuous", "number": "plural"},
+    "తే": {"function": "conditional"},
+    "తూ": {"function": "while"},
+    "క": {"function": "negative_participle"},
+    "డం": {"function": "nominalize"},
+    "డం వల్ల": {"function": "causal_clause"},
+    "ఇ": {"tense": "past"},
+    "తా": {"tense": "future/habitual"},
+    "వటానికి": {"function": "purpose_infinitive"},
+    "వడానికి": {"function": "purpose_infinitive"},
+    "కూడదని": {"function": "prohibitive"},
+    "లేక": {"function": "conjunctive_negative"},
+    "మంటే": {"function": "quotative"},
+    "సేది": {"tense": "future_potential"}
+  },
+  "nominal": {
+    "తనం": {"function": "abstract", "meaning": "-ness"},
+    "తనము": {"function": "abstract"},
+    "రికం": {"function": "abstract"},
+    "పు": {"function": "adjectival"},
+    "గా": {"function": "adverbial"},
+    "గానూ": {"function": "emphatic_adverbial"},
+    "గా ఉండి": {"function": "state_marker"},
+    "గానీ": {"function": "disjunctive"},
+    "గానే": {"function": "immediate"},
+    "గానేనూ": {"function": "emphatic_immediate"}
+  },
+  "place": {
+    "పురం": {"type": "city"},
+    "పట్నం": {"type": "city"},
+    "వూరు": {"type": "village"},
+    "పల్లె": {"type": "village"},
+    "గూడెం": {"type": "hamlet"},
+    "వాడ": {"type": "settlement"},
+    "పాళెం": {"type": "settlement"},
+    "చెర్ల": {"type": "village"},
+    "పాడు": {"type": "settlement"},
+    "పూడి": {"type": "settlement"}
+  },
+  "temporal": {
+    "తర్వాత": {"meaning": "after"},
+    "ముందు": {"meaning": "before"},
+    "తరువాత": {"meaning": "after"},
+    "లోపు": {"meaning": "within"},
+    "వరకు": {"meaning": "until"},
+    "నాటికి": {"meaning": "by (time)"}
+  },
+  "quantitative": {
+    "ంత": {"meaning": "as much as"},
+    "ంతటి": {"meaning": "of that size"},
+    "లాంటిది": {"meaning": "similar to"},
+    "లాంటి": {"meaning": "like/similar"},
+    "కొంత": {"meaning": "some"},
+    "ఎంత": {"meaning": "how much"},
+    "చాలా": {"meaning": "much/many"}
+  },
+  "archaic": {
+    "మంబు": {"function": "nominal"},
+    "ఇఁడి": {"meaning": "without"},
+    "మాలు": {"meaning": "without"},
+    "అమి": {"function": "negative_nom"},
+    "ఇండి": {"meaning": "one_without"}
+  }
+}
+
+# Flatten suffixes into a single confidence-weighted lookup dict
+# Priority: longer suffixes first, with semantic confidence
+_SUFFIX_LOOKUP: Dict[str, Tuple[str, float, Dict[str, Any]]] = {}
+for category, suffixes in _TELUGU_SUFFIX_DATA.items():
+    for suf, meta in suffixes.items():
+        # Assign confidence based on category and metadata
+        conf = 0.95
+        if meta.get("archaic"):
+            conf = 0.75
+        elif category in ("verbal", "nominal"):
+            conf = 0.92
+        elif category == "place":
+            conf = 0.98  # high for toponyms
+        elif category == "vocative":
+            conf = 0.90
+        # Store: (category, confidence, metadata)
+        _SUFFIX_LOOKUP[suf] = (category, conf, meta)
+
+# Sort suffixes by length (longest first) for greedy matching
+_SORTED_SUFFIXES = sorted(_SUFFIX_LOOKUP.keys(), key=lambda x: -len(x))
+
+# Build exception map for common fused forms (e.g., పుస్తకానికి → పుస్తకం + కి)
+_COMMON_EXCEPTIONS = {
+    'పుస్తకానికి': ('పుస్తకం', 'కి'),
+    'పుస్తకంలో': ('పుస్తకం', 'లో'),
+    'ఇంట్లో': ('ఇల్లు', 'లో'),
+    'ఇంటికి': ('ఇల్లు', 'కి'),
+    'పిల్లలు': ('పిల్ల', 'లు'),  # plural
+}
